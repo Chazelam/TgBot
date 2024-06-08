@@ -19,12 +19,13 @@ def clone_content(donor_channel_id: int, target_channel_id: int):
 
     messages = bot.get_chat_history(chat_id=donor_channel_id)
     reverssed_messages = reversse_message_history(messages)
-    i = 0
+    i = -1
     for message in reverssed_messages:
+        i += 1
         print(f"{i}/{len(reverssed_messages)}")
         if str(message.media) == "MessageMediaType.VIDEO": # or "MessageMediaType.ANIMATION"
             if message.video.duration < 300:
-                print("vidio too short")
+                # print("vidio too short")
                 continue
             video_id = message.video.file_id
             name = message.video.file_name
@@ -37,9 +38,7 @@ def clone_content(donor_channel_id: int, target_channel_id: int):
             bot.send_video(target_channel_id, video_id, reply_to_message_id=thumbnail.id)
             # message.copy(chat_id = target_channel_id)
             message.delete()
-        i += 1
     else:
-
         print("finish")
 
 
