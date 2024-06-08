@@ -5,3 +5,4 @@
 keys.py
 test.ipynb
 *.session
+*.session-journal
