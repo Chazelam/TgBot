@@ -1,0 +1,56 @@
+FFmpeg source code (version 5.1.2):
+https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n5.1.2.zip
+
+Build: ffmpeg-5.1.2-win64-shared-lgpl
+
+Configuration:
+  --enable-shared
+  --enable-version3
+  --disable-w32threads 
+  --enable-nvdec
+  --enable-nvenc 
+  --enable-libtheora 
+  --enable-libvorbis 
+  --enable-libvpx 
+  --disable-debug 
+  --enable-iconv 
+  --enable-dxva2 
+  --enable-amf 
+  --enable-d3d11va
+  --enable-libmfx 
+  --enable-libwebp 
+  --enable-libopus 
+  --enable-libspeex
+  --enable-ffnvcodec
+  --enable-cuvid
+  --enable-libdav1d
+  --enable-libsvtav1  
+
+Libraries:
+  libiconv          1.17              <http://gnu.org/software/libiconv>
+  Opus              1.3.1             <https://opus-codec.org>
+  Theora            1.1.1             <http://theora.org>
+  vpx               1.12.0            <http://webmproject.org>
+  WebP              1.2.4             <https://developers.google.com/speed/webp>
+  Vorbis            1.3.7             <http://vorbis.com>
+  Speex             1.2.1             <http://speex.org>
+  libmfx            1.35.1            <https://software.intel.com/en-us/media-sdk>
+                    1.35.1            <https://github.com/lu-zero/mfx_dispatch>
+  AMF               1.4.26            <https://github.com/GPUOpen-LibrariesAndSDKs/AMF>
+                                      <https://gpuopen.com/gaming-product/advanced-media-framework>
+  nv-codec-headers  11.1.5.1          <https://git.videolan.org/?p=ffmpeg/nv-codec-headers.git>
+  dav1d             1.0.0             <https://code.videolan.org/videolan/dav1d>
+  SVT-AV1           1.3.0             <https://gitlab.com/AOMediaCodec/SVT-AV1>
+
+This FFmpeg build is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This FFmpeg build is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
