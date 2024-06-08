@@ -61,7 +61,7 @@ def pornHub(bot, message):
 
 
 
-# bot.add_handler(MessageHandler(sendRawUpdate)) # Debugging
+bot.add_handler(MessageHandler(sendRawUpdate)) # Debugging
 bot.add_handler(MessageHandler(youtube, isYouTube_filter))
 bot.add_handler(MessageHandler(pornHub, isPornHub_filter))
 if __name__ == "__main__":

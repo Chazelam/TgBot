@@ -1,10 +1,10 @@
 # ATENTION!! 
-Pyrogram           2.0.106
+Pyrogram 2.0.106
 BUG:
     raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002185579056
+    ValueError: Peer id invalid: -1002185579056
 
-Moncey fix:
+Monckey fix:
 
 File "D:\Doccuments\VSCode\VideoDownloadBot\env\Lib\site-packages\pyrogram\utils.py", line 246, in get_peer_type
 
