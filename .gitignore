@@ -4,4 +4,4 @@
 /env/
 keys.py
 test.ipynb
-Testy.session
+*.session
